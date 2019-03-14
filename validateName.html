@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate Name of Class</title>
+</head>
+<body>
+<script>
+    function validateName(str) {
+        // let str = prompt('Enter Name !!!');
+        let patt = /^[A,P,C]+[0-9]{4}[G,H,I,K,L,M]+$/;
+        if (patt.test(str)){
+            alert('You enter Name is right!!!')
+        } else {
+            alert('You enter Name is wrong!!!')
+        }
+    }
+    validateName("C3018G");
+</script>
+</body>
+</html>
